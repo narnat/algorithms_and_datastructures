@@ -21,7 +21,7 @@ def maximumSum(a, m):
         if prefix[i][1] > prefix[i + 1][1]:
             if prefix[i + 1][0] - prefix[i][0] < mini:
                 mini = prefix[i + 1][0] - prefix[i][0]
-    return max(maxi, m - mini)
+    return max(maxi, m - mini)                        # Possibly, Max value of maxi is m - 1, Min val of mini is 1
 
 ans1 = maximumSum([3, 3, 9, 9, 5], 7)
 ans2 = maximumSum([1, 2, 3], 2)
